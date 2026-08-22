@@ -1,0 +1,38 @@
+{
+  "name": "dsh-plugin-manager",
+  "version": "0.1.0",
+  "description": "插件搜索与安装管理：设置页卡片内搜索 npm registry 上的 dsh 插件，一键安装/卸载（受限命令通道，仅当前 profile）。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "harness",
+    "plugin",
+    "manager",
+    "market"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "license": "MIT"
+}
