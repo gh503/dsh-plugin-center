@@ -1,5 +1,5 @@
 {
-  "name": "dsh-plugin-manager",
+  "name": "dsh-plugin-center",
   "version": "0.1.0",
   "description": "插件搜索与安装管理：设置页卡片内搜索 npm registry 上的 dsh 插件，一键安装/卸载（受限命令通道，仅当前 profile）。",
   "type": "module",

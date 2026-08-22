@@ -1,4 +1,4 @@
-# dsh-plugin-manager
+# dsh-plugin-center
 
 DeepSeek Harness 插件搜索与安装管理 · 客户端插件
 
@@ -19,10 +19,10 @@ DeepSeek Harness 插件搜索与安装管理 · 客户端插件
 
 ```bash
 # 离线 tarball 或本地目录
-dsh plugin --profile web add ./dsh-plugin-manager
+dsh plugin --profile web add ./dsh-plugin-center
 
 # npm registry（发布后）
-dsh plugin --profile web add dsh-plugin-manager
+dsh plugin --profile web add dsh-plugin-center
 ```
 
 安装后重启服务，浏览器硬刷新 → 设置页出现「插件管理」卡片。
@@ -33,7 +33,7 @@ dsh plugin --profile web add dsh-plugin-manager
 
 ```yaml
 - id: plugin-manager
-  name: dsh-plugin-manager
+  name: dsh-plugin-center
   config:
     profile: web      # 固定管理的 profile（不接受客户端指定）
     home: /home/gh503/.dsh   # profile 根目录（默认取 DSH_HOME）

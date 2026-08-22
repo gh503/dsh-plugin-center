@@ -1,7 +1,7 @@
 # dsh-plugin-manager 组合包层（随包分发）
 - insert:
     - id: plugin-manager
-      name: dsh-plugin-manager
+      name: dsh-plugin-center
       inject: [settings, webServer]
       config:
         profile: web
